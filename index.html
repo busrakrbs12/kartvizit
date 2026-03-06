@@ -7,14 +7,12 @@
 
 <title>Büşra Karabaş Dijital Kartvizit</title>
 
-<!-- WhatsApp link önizleme -->
+<!-- WhatsApp önizleme -->
 
 <meta property="og:title" content="Büşra Karabaş - Gayrimenkul Danışmanı">
 <meta property="og:description" content="Realty World Vega Gayrimenkul | Dijital Kartvizit">
 <meta property="og:image" content="https://i.imgur.com/anhSyTy.jpeg">
 <meta property="og:type" content="website">
-
-<!-- ikonlar -->
 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -24,7 +22,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 /* GENEL */
 
 body{
-font-family:Arial, Helvetica, sans-serif;
+font-family: Arial, Helvetica, sans-serif;
 background:#f4f4f4;
 margin:0;
 text-align:center;
@@ -42,6 +40,8 @@ align-items:center;
 
 .logo img{
 width:160px;
+display:block;
+margin:auto;
 }
 
 /* KART */
@@ -54,6 +54,26 @@ margin:-90px auto 40px auto;
 padding:35px 25px;
 border-radius:22px;
 box-shadow:0 20px 50px rgba(0,0,0,0.18);
+
+/* kart animasyonu */
+
+animation:cardFade 0.8s ease;
+}
+
+/* ANİMASYON */
+
+@keyframes cardFade{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
 }
 
 /* PROFİL FOTO */
@@ -65,7 +85,12 @@ border-radius:50%;
 object-fit:cover;
 border:5px solid white;
 margin-top:-80px;
-box-shadow:0 12px 35px rgba(0,0,0,0.25);
+
+/* glow efekti */
+
+box-shadow:
+0 0 0 6px rgba(255,255,255,0.6),
+0 15px 35px rgba(0,0,0,0.25);
 }
 
 /* YAZILAR */
@@ -100,23 +125,37 @@ text-decoration:none;
 color:black;
 font-weight:bold;
 font-size:14px;
-transition:0.25s;
+transition:0.2s;
 display:flex;
 align-items:center;
 justify-content:center;
-gap:6px;
+gap:8px;
+
+/* iPhone tarzı */
+
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
 }
 
+/* HOVER */
+
 .btn:hover{
-background:#e6e6e6;
+background:#e8e8e8;
 transform:translateY(-2px);
 }
 
-/* WHATSAPP BUTON */
+/* BASMA EFEKTİ */
+
+.btn:active{
+transform:scale(0.96);
+box-shadow:0 2px 5px rgba(0,0,0,0.15);
+}
+
+/* WHATSAPP */
 
 .whatsapp{
 background:#25D366;
 color:white;
+grid-column:1 / span 2;
 }
 
 .whatsapp:hover{
