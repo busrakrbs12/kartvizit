@@ -1,14 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
+
 <head>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Büşra Karabaş Dijital Kartvizit</title>
+
+<!-- WhatsApp link preview -->
+
+<meta property="og:title" content="Büşra Karabaş - Gayrimenkul Danışmanı">
+<meta property="og:description" content="Realty World Vega Gayrimenkul | Dijital Kartvizit">
+<meta property="og:image" content="https://i.imgur.com/anhSyTy.jpeg">
+<meta property="og:type" content="website">
+
+<!-- iconlar -->
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 
+/* genel */
+
 body{
-font-family:Arial;
+font-family:Arial, Helvetica, sans-serif;
 background:#f0f0f0;
 margin:0;
 text-align:center;
@@ -25,15 +42,16 @@ align-items:center;
 }
 
 .logo img{
-width:160px;
+width:150px;
 }
 
 /* kart */
 
 .card{
 background:white;
-width:350px;
-margin:-60px auto 40px auto;
+width:90%;
+max-width:360px;
+margin:-70px auto 40px auto;
 padding:30px;
 border-radius:20px;
 box-shadow:0 15px 40px rgba(0,0,0,0.15);
@@ -46,19 +64,22 @@ width:120px;
 height:120px;
 border-radius:50%;
 object-fit:cover;
-margin-top:10px;
 border:4px solid white;
+margin-top:10px;
+box-shadow:0 8px 25px rgba(0,0,0,0.2);
 }
 
-/* başlık */
+/* yazılar */
 
 h2{
 margin-top:15px;
+font-size:22px;
 }
 
 p{
 color:#555;
 margin-bottom:25px;
+font-size:14px;
 }
 
 /* butonlar */
@@ -70,13 +91,14 @@ gap:15px;
 }
 
 .btn{
-padding:15px;
+padding:14px;
 background:#f0f0f0;
 border-radius:12px;
 text-decoration:none;
 color:black;
 font-weight:bold;
 transition:0.2s;
+font-size:14px;
 }
 
 .btn:hover{
@@ -87,7 +109,6 @@ background:#e0e0e0;
 
 .save-btn{
 grid-column:1 / span 2;
-text-align:center;
 background:#c8102e;
 color:white;
 }
@@ -101,18 +122,6 @@ background:#a50c24;
 </head>
 
 <body>
-
-<meta property="og:title" content="Büşra Karabaş - Gayrimenkul Danışmanı">
-
-<meta property="og:description"
-content="Realty World Vega Gayrimenkul | İletişim ve dijital kartvizit">
-
-<meta property="og:image"
-content="https://i.imgur.com/anhSyTy.jpeg">
-
-<meta property="og:type" content="website">
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <div class="header">
 <div class="logo">
@@ -132,31 +141,23 @@ Gayrimenkul Danışmanı / Realty World Vega Gayrimenkul
 
 <div class="buttons">
 
-<a class="btn" href="tel:+905059292996" target="_blank">
+<a class="btn" href="tel:+905059292996">
 <i class="fa-solid fa-phone"></i> Telefon
 </a>
 
-<a class="btn"
-href="mailto:busrakarabas@realtyworld.com.tr"
-target="_blank">
+<a class="btn" href="mailto:busrakarabas@realtyworld.com.tr">
 <i class="fa-solid fa-envelope"></i> Mail
 </a>
 
-<a class="btn"
-href="https://vega.realtyworld.com.tr/"
-target="_blank">
+<a class="btn" href="https://vega.realtyworld.com.tr/" target="_blank">
 <i class="fa-solid fa-globe"></i> Website
 </a>
 
-<a class="btn"
-href="https://maps.app.goo.gl/Dm9aHJPqBPmXXPQB9"
-target="_blank">
+<a class="btn" href="https://maps.app.goo.gl/Dm9aHJPqBPmXXPQB9" target="_blank">
 <i class="fa-solid fa-location-dot"></i> Konum
 </a>
 
-<a class="btn save-btn"
-href="busrakarabas.vcf"
-download>
+<a class="btn save-btn" href="busrakarabas.vcf">
 Rehbere Kaydet
 </a>
 
