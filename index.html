@@ -7,26 +7,30 @@
 
 <title>Büşra Karabaş Dijital Kartvizit</title>
 
+<!-- WhatsApp link önizleme -->
+
 <meta property="og:title" content="Büşra Karabaş - Gayrimenkul Danışmanı">
 <meta property="og:description" content="Realty World Vega Gayrimenkul | Dijital Kartvizit">
 <meta property="og:image" content="https://i.imgur.com/anhSyTy.jpeg">
 <meta property="og:type" content="website">
+
+<!-- ikonlar -->
 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 
-/* genel */
+/* GENEL */
 
 body{
-font-family: Arial, Helvetica, sans-serif;
+font-family:Arial, Helvetica, sans-serif;
 background:#f4f4f4;
 margin:0;
 text-align:center;
 }
 
-/* kırmızı header */
+/* ÜST KIRMIZI ALAN */
 
 .header{
 background:#c8102e;
@@ -40,7 +44,7 @@ align-items:center;
 width:160px;
 }
 
-/* kart */
+/* KART */
 
 .card{
 background:white;
@@ -50,10 +54,9 @@ margin:-90px auto 40px auto;
 padding:35px 25px;
 border-radius:22px;
 box-shadow:0 20px 50px rgba(0,0,0,0.18);
-position:relative;
 }
 
-/* profil */
+/* PROFİL FOTO */
 
 .profile{
 width:130px;
@@ -65,7 +68,7 @@ margin-top:-80px;
 box-shadow:0 12px 35px rgba(0,0,0,0.25);
 }
 
-/* yazılar */
+/* YAZILAR */
 
 h2{
 margin-top:15px;
@@ -79,7 +82,7 @@ margin-bottom:30px;
 line-height:1.4;
 }
 
-/* buton alanı */
+/* BUTON ALANI */
 
 .buttons{
 display:grid;
@@ -87,7 +90,7 @@ grid-template-columns:repeat(2,1fr);
 gap:14px;
 }
 
-/* buton */
+/* BUTON */
 
 .btn{
 padding:14px;
@@ -97,21 +100,30 @@ text-decoration:none;
 color:black;
 font-weight:bold;
 font-size:14px;
-transition:all 0.25s ease;
+transition:0.25s;
 display:flex;
 align-items:center;
 justify-content:center;
 gap:6px;
 }
 
-/* hover */
-
 .btn:hover{
 background:#e6e6e6;
 transform:translateY(-2px);
 }
 
-/* rehbere kaydet */
+/* WHATSAPP BUTON */
+
+.whatsapp{
+background:#25D366;
+color:white;
+}
+
+.whatsapp:hover{
+background:#1ebe5d;
+}
+
+/* REHBERE EKLE */
 
 .save-btn{
 grid-column:1 / span 2;
@@ -121,21 +133,6 @@ color:white;
 
 .save-btn:hover{
 background:#a50c24;
-}
-
-/* mobil düzen */
-
-@media (max-width:400px){
-
-.card{
-padding:30px 20px;
-}
-
-.profile{
-width:115px;
-height:115px;
-}
-
 }
 
 </style>
@@ -157,7 +154,7 @@ height:115px;
 <h2>Büşra Karabaş</h2>
 
 <p>
-Gayrimenkul Danışmanı <br>
+Gayrimenkul Danışmanı<br>
 Realty World Vega Gayrimenkul
 </p>
 
@@ -179,7 +176,14 @@ Realty World Vega Gayrimenkul
 <i class="fa-solid fa-location-dot"></i> Konum
 </a>
 
-<a class="btn save-btn" href="busrakarabas.vcf">
+<a class="btn whatsapp"
+href="https://wa.me/905059292996"
+target="_blank">
+<i class="fa-brands fa-whatsapp"></i> WhatsApp
+</a>
+
+<a class="btn save-btn"
+href="busrakarabas.vcf">
 Rehbere Kaydet
 </a>
 
